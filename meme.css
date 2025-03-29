@@ -1,0 +1,96 @@
+body {
+    width: 100%;
+}
+
+* {
+    transition: all 0.5s linear;
+}
+
+body p,
+button,
+span {
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    width: 90%;
+    height: 100vh;
+    max-height: 1024px;
+    margin: 0 auto;
+    background-image: url(Images/nen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div1 {
+    width: 50%;
+    position: fixed;
+    top: 40vh;
+    right: 25%;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+.answear_content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 2vw 10%;
+}
+
+.thongbao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thongbao {
+    scale: 0.01;
+}
+
+.thongbao.call {
+    opacity: 1;
+    width: 35%;
+    outline: 5px solid rgb(255, 30, 30);
+    border-radius: 1rem;
+    background-color: rgb(162, 162, 162);
+    margin: 0 auto;
+    z-index: 50;
+    scale: 1;
+    position: fixed;
+    top: 25vh;
+    left: 30%;
+    rotate: 3600deg;
+}
+
+.anh {
+    width: 100%;
+}
+
+.anh img {
+    width: 80%;
+    height: 30vh;
+    margin-left: 10%;
+    border-radius: 1rem;
+}
+
+#close {
+    border: none;
+    width: 30%;
+    margin-top: 1vw;
+    background-color: white;
+    outline: 1px solid red;
+    color: red;
+    border-radius: 1rem;
+}
+
+#close:hover {
+    background-color: red;
+    color: white;
+}
